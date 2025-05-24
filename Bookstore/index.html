@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scroll Activated Animation</title>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        height: 150px;
+        background-color: #B26800;
+    }
+
+    .parallax-bg {
+        padding: 300px 0;
+        background-image: url(assets/Images/entry.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .parallax-bg h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 70px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .content {
+          height: 600px;
+          background-color: #e0e0e0;
+      }
+
+      .about {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 100px 0;
+          transform-style: preserve-3d;
+          transform: perspective(800px);
+      }
+      .about h2 {
+          text-transform: uppercase;
+          font-size: 50px;
+          font-weight: 400;
+      }
+      .about h2, .about p {
+          transition: all 0.8s ease;
+      }
+      .about.hidden h2 {
+          opacity: 0;
+          transform: translate3d(0, 0, 400px) rotateY(-40deg);
+      }
+      .about.hidden p {
+          opacity: 0;
+          transform: translate3d(0, 0, 400px) rotateY(40deg);
+      }
+      .us{
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 20px;
+        text-align: justify;
+      }
+    h2{
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 50px;
+    }
+    .button {
+  border-radius: 4px;
+background: linear-gradient(to right, #A26E00, #A26E00);
+margin-left: 650px;
+margin-top: 150px;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.a{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 25px;
+  font-family: 'Yeon Sung', cursive;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="content">
+      <div class="parallax-bg">
+          <h1>Hey There!</h1>
+      </div>
+  </div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+  (function() {
+
+      var documentEl = $(document),
+          parallaxBg = $('div.parallax-bg');
+
+      documentEl.on('scroll', function() {
+          var currScrollPos = documentEl.scrollTop();
+          parallaxBg.css('background-position', '0 ' + -currScrollPos/4 + 'px');
+      });
+
+
+
+  })();
+
+</script>
+
+  <!-- <div class="content"></div> -->
+
+
+  <div class="about hidden">
+    <br><br><br><br>
+      <h2 style="font-size:50px;">What's Inside !!</h2>
+      <p>Welcome! This is Buybooks.com.  Studies shows that people who read are more happier than rest. This website provides you to buy online books form best link. It contains three type of books inside. Self-help books, college books and
+      Childern books. You can buy the books form the link provided. Also this website contains the best-selling books of 2019. So Sit back and explore!!!</p>
+
+  </div>
+
+
+  <div class="content">
+    <h2>About Us</h2>
+    <p class="us"> Some people like to read on a screen. Other people need the variety and artistry, the sight, smell, and feel of actual books.They love seeing them on their shelves; they love having shelves for them.
+
+They love taking them along when they leave the house, and stacking them by their bedsides. They love finding old letters and bookmarks in them. They like remembering where they bought them or who they received them from.
+
+They want to read in a way that offers a rich experience, more than the words only: the full offering of a book. They are particular about covers, they want to surround themselves with the poetry of good design.
+
+They can't pass a bookstore without going in and getting something, they keep a library card and use it.
+
+They are allergic to cheap bestsellers; they delight in the out-of-the-way and the rare, the well-made and the hard-to-accomplish. They take care of their books; they  know a book is only theirs until it passes on to someone else. They are good stewards of a timeless object.</p>
+
+<p class="a">These are the people we're working for ;-)</p>
+     <p>
+
+     </p>
+          <a href="Home Page.html"><button class="button" ><span>Explore!!! </span></button></a>
+  </div>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript">
+
+      (function() {
+
+          var aboutEl = $('div.about'),
+              aboutElOffset = aboutEl.offset().top/2,
+              documentEl = $(document);
+
+          documentEl.on('scroll', function() {
+              if ( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden') ) aboutEl.removeClass('hidden');
+          });
+
+
+
+
+
+      })();
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BuyBooks.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>GETTING STARTED WITH BRACKETS</title>
+  <meta name="description" content="An interactive getting started guide for Brackets.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="vanillaslider/slider.css" />
+
+<link rel="stylesheet" href="style.css">
+
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  .book-bg {
+
+      width: 250px;
+      height: 400px;
+      margin: 50px 630px;
+
+      background: url(assets/Images/page.jpg) no-repeat;
+      background-size: cover;
+      transform-style: preserve-3d;
+      perspective: 500px;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  }
+  .book-cover {
+      width: 100%;
+      height: 100%;
+      background: url(assets/Images/cover.jpg) no-repeat;
+      background-size: cover;
+      transform-origin: 0 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  }
+  .book-bg:hover .book-cover {
+      transform: rotateY(-60deg);
+  }
+  	 main {
+  		 height: 100vh;
+  		 width: 100vw;
+  		 display: flex;
+  		 justify-content: center;
+
+  	 }
+  	#slide-1,#slide-2,#slide-3,#slide-4{
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+  	#slide-1 {
+        background-image: url(assets/Images/Book.jpg);
+        font-size: 40px;
+        font-family: 'Open Sans', sans-serif;
+  	}
+  	#slide-2 {
+        background-image:url(assets/Images/kelly-sikkema-ElF7K4IWcGQ-unsplash.jpg);
+        font-size: 40px;
+        font-family: 'Open Sans', sans-serif;
+  	}
+  	#slide-3 {
+  	  background-image: url(assets/Images/jess-bailey-l3N9Q27zULw-unsplash.jpg);
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+  	}
+  	#slide-4 {
+  	  background-image: url(assets/Images/annelies-geneyn-bhBONc07WsI-unsplash.jpg);
+      font-size: 40px;
+      font-family: 'Open Sans', sans-serif;
+  	}
+      @font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url(QUIGLEYW.TTF);
+}
+h4,marquee{
+  font-family: 'Open Sans', sans-serif;
+}
+.review {
+padding: 20px 60px;
+background: #FFAB87;
+border-radius: 10px;
+font-family: 'Handlee', cursive;
+line-height: 1.625;
+position: relative;
+margin-left: 120px;
+margin-right: 120px;
+}
+
+.review p {
+text-align: center;
+color:black;
+font-family: 'Handlee', cursive;
+font-size: 18px;
+}
+
+.review span {
+position: relative;
+display: inline-block;
+}
+
+.review span:before {
+content: "“";
+font-size: 72px;
+color: #F62A16;
+position: absolute;
+left: -40px;
+top: 40px;
+line-height: 0;
+}
+
+.review span:after {
+content: "”";
+font-size: 72px;
+color: #F62A16;
+position: absolute;
+right: -40px;
+bottom: -10px;
+line-height: 0;
+}
+body{
+      background-image: url(assets/Images/back.jpg);
+      background-size:cover;
+      max-width: 100%;
+    overflow-x: hidden;
+
+  }
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  .book-bg10 {
+      position: relative;
+      width: 150px;
+      height: 250px;
+      margin: 100px auto;
+      background: url(assets/Images/page.jpg) no-repeat;
+      background-size: cover;
+      transform-style: preserve-3d;
+      perspective: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-cover10 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(assets/Images/Self.jpg) no-repeat;
+      background-size: cover;
+      transform-origin: 0 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-bg10:hover .book-cover10 {
+      transform: rotateY(-60deg);
+  }
+
+  .book-bg11 {
+      position: relative;
+      width: 150px;
+      height: 250px;
+      margin: 100px auto;
+      background: url(assets/Images/page.jpg) no-repeat;
+      background-size: cover;
+      transform-style: preserve-3d;
+      perspective: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-cover11 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(assets/Images/Childern.jpg) no-repeat;
+      background-size: cover;
+      transform-origin: 0 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-bg11:hover .book-cover11 {
+      transform: rotateY(-60deg);
+  }
+
+  .book-bg12 {
+      position: relative;
+      width: 150px;
+      height: 250px;
+      margin: 100px auto;
+      background: url(assets/Images/page.jpg) no-repeat;
+      background-size: cover;
+      transform-style: preserve-3d;
+      perspective: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-cover12 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(assets/Images/college.jpg) no-repeat;
+      background-size: cover;
+      transform-origin: 0 50%;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .book-bg12:hover .book-cover12 {
+      transform: rotateY(-60deg);
+  }
+
+  .main {
+      background: linear-gradient(to right, #FFFFFF, #FEDAB9);
+      background-color: white;
+      width: 1200px;
+      height: 600px;
+      margin: 7em auto;
+      border-radius: 1.5em ;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+  }
+  .gerne{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  .t1,td,tr{
+    height: 200px;
+    width: 1000px;
+    align-self: center;
+    margin-left: 100px;
+
+  }
+  img {
+    height: 300px;
+    width: 170px;
+    margin-left: 90px;
+    margin-right: -90px;
+  }
+   .wrapper1{
+  margin-left: 188px;
+  margin-top: -150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper2{
+margin-top: -150px;
+margin-left: 190px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.wrapper3{
+margin-top: -150px;
+margin-left: 180px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.abc{
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.abc span{
+  position: relative;
+  z-index: 2;
+}
+
+.abc:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #8A4303;
+  transition: all .35s;
+}
+
+.abc:hover{
+  color: #fff;
+}
+
+.abc:hover:after{
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+<nav id="navigation-bar" class="navbar navbar-inverse navbar-fixed-top navbar-custom nav-bar-default animated slideInDown">
+  <div class="container-fluid">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed btn btn-lg animated flipInX" data-toggle="collapse" data-target="#navigation-bar-menu">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand animated slideInLeft" href="#">Buy Books</a>
+    </div>
+    <div class="collapse navbar-collapse animated slideIn" id="navigation-bar-menu">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"><a href="#"></a></li>
+        <li class="page-scroll">
+          <a href="Login.html" class="navbar-menu-active"><i class="fa fa-fw fa-sign-in"></i>Sign Up</a>
+        </li>
+        <li class="page-scroll">
+          <a href="Contact Us.html" class="navbar-menu-active"><i class="fa fa-fw fa-address-book"></i>Contact Us</a>
+        </li>
+        <li class="page-scroll">
+          <a href="Order.html" class="navbar-menu-active"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Order</a>
+        </li>
+        <li class="page-scroll">
+          <a href="Sell.html" class="navbar-menu-active"><i class="fa fa-handshake-o" aria-hidden="true"></i>Sell</a>
+        </li>
+        <!-- Search Form -->
+        <li>
+          <form class="navbar-form navbar-left" action="/search">
+            <div class="form-group">
+              <input type="text" class="form-control search-bar" placeholder="Search for books..." name="query">
+            </div>
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+
+	<div class="slides">
+		<div id="slide-1" class="active">
+      <font size="26" style="color: saddlebrown;"><b>Reasons Why Should You Read</b></font>
+    </div>
+		<div id="slide-2">
+      <font size="56px" style="color: #163780 "><b> Improves Memory</b></font>
+    </div>
+		<div id="slide-3">
+      <font size="56px" style="color: #6B1202 "><b> Improves Your Creativity </b></font>
+    </div>
+		<div id="slide-4">
+      <font size="56px" style="color: #228B22"><b>Reduces Stress</b></font>
+    </div>
+	</div>
+
+	<ul class="slide-controller">
+		<li data-link="slide-1" class="active"></li>
+		<li data-link="slide-2"></li>
+		<li data-link="slide-3"></li>
+		<li data-link="slide-4"></li>
+	</ul>
+
+	<button class="arrow-button-right">
+		<img src="vanillaslider/arrow-right.svg" alt="next">
+	</button>
+
+	<button class="arrow-button-left">
+		<img src="vanillaslider/arrow-left.svg" alt="previous">
+	</button>
+
+</main>
+
+<script src="vanillaslider/slider.js" type="text/javascript" charset="utf-8"></script>
+<div class="slide1" style="background-image: url(assets/Images/edited.jpg); background-repeat:no-repeat; background-size: 1516px 850px;" >
+  <div class="jumbotron" style="background-color:transparent; text-align:center;color:#FC7430;" >
+      <h1 postion:left;>BEST SELLER</h1>
+
+      <div class="book-bg" style="text-align: left float:left;">
+          <div class="book-cover" style="text-align: left float:left;">
+          </div>
+      </div>
+      <blockquote class="review"><span><p>For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home, finding friends in the gulls and lessons in the sand. Then the time comes when she yearns to be touched and loved. When two young men from town become intrigued by her wild beauty, Kya opens herself to a new life–until the unthinkable happens.</p></blockquote>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript"></script>
+  </div>
+<div class="slide10">
+<div class="main">
+<div class="gerne"><b>Select Books By Genre</b></div>
+<table class="t1" style="align : center;">
+  <tr>
+    <td>
+      <div class="book-bg10">
+          <div class="book-cover10"></div>
+      </div>
+
+     </td>
+    <td>
+      <div class="book-bg11">
+        <div class="book-cover11"></div>
+    </div>
+  </td>
+    <td>
+      <div class="book-bg12">
+        <div class="book-cover12"></div>
+
+    </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="wrapper1">
+      <a href="self help books.html" class="abc"><span>Self-Help</span></a>
+    </td>
+    <td>
+      <div class="wrapper2">
+      <a href="Children Books.html" class="abc"><span>Children</span></a>
+    </div>
+    </td>
+    <td>
+      <div class="wrapper3">
+      <a href="College Books.html" class="abc"><span>College</span></a>
+    </div>
+    </td>
+  </tr>
+</table>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript"></script>

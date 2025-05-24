@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="An interactive getting started guide for Brackets.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="vanillaslider/slider.css" />
+
+<link rel="stylesheet" href="style.css">
+  <title>Self Help Books</title>
+  <style>
+  body {
+        background-image: url(assets/Images/self-help.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .overlay a{
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      }
+    }
+    .main {
+        background: linear-gradient(to right, #FFFFFF, #DBBCFF);
+        background-color: white;
+        width: 1250px;
+        height: 800px;
+        margin: 7em auto;
+        border-radius: 1.5em ;
+
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    .div1{
+      background-size:cover;
+          border-radius: 1.5em 1.5em 0em 0em;
+          height: 40px;
+          padding: 5px;
+          color: #8C4BFC;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          font-size: 25px;
+          background-repeat:no-repeat;
+          background-size: cover;
+    }
+
+        .t1{
+          align:center;
+          padding: 60px;
+          margin-top: 120px;
+          margin-left: 220px;
+          width: 800px;
+          height: 200px;
+        }
+        .t1,.t2,tr,td{
+          border-collapse: collapse;
+        }
+        #i1{
+          margin-left: 100px;
+          margin-right: -100px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        }
+        #i2{
+          margin-left: 100px;
+          margin-right: -100px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        }
+        #i3{
+          margin-left: 100px;
+          margin-right: -100px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        }
+        .t2{
+          align:center;
+          padding: 60px;
+          margin-top: 60px;
+          margin-left: 220px;
+          width: 800px;
+          height: 200px;
+        }
+        #i5{
+          margin-left: 150px;
+          margin-right: -150px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        }
+        #i4{
+          margin-left: 150px;
+          margin-right: -150px;
+          box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        }
+  </style>
+</head>
+<body>
+  <nav id="navigation-bar" class="navbar navbar-inverse navbar-fixed-top navbar-custom nav-bar-default animated slideInDown">
+     <div class="container-fluid">
+      <!--MENU COLLAPSE WHEN SCREEN SIZE IS SMALL-->
+      <div class="navbar-header page-scroll">
+  	    <button type="button" class="navbar-toggle collapsed btn btn-lg animated flipInX" data-toggle="collapse" data-target="#navigation-bar-menu">
+  	    <i class="fa fa-bars"></i></button>
+  		<a class="navbar-brand animated slideInLeft" href="Home Page.html">Buy Books</a>
+      </div>
+  	<!--THE MENU-->
+  	<div class="collapse navbar-collapse animated slideIn" id="navigation-bar-menu">
+  	    <ul class="nav navbar-nav navbar-right">
+  		    <li class="hidden">
+                  <a href="#"></a>
+              </li>
+            
+  			<li class="page-scroll">
+                  <a href="Login.html" class="navbar-menu-active"><i class="fa fa-fw fa-sign-in"></i>Sign Up</a>
+              </li>
+  			<li class="page-scroll">
+                  <a href="Contact Us.html" class="navbar-menu-active"><i class="fa fa-fw fa-address-book"></i>Contact Us</a>
+              </li>
+		</li>
+			<li class="page-scroll">
+                <a href="Order.html" class="navbar-menu-active"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Order</a>
+            </li>
+			<li class="page-scroll">
+                <a href="Sell.html" class="navbar-menu-active"><i class="fa fa-handshake-o" aria-hidden="true"></i>Sell</a>
+
+            </li>
+
+          </ul>
+      </div>
+     </div>
+
+  </nav>
+  </header>
+  <div class="main">
+    <div align="center" class="div1">
+      <p class=div1>Self Help Books</p>
+    </div>
+    <div class="div2">
+      <table class="t1">
+        <tr>
+          <td>
+            <div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+  <a href="https://www.amazon.in/Art-Dealing-People-Giblin/dp/8188452009" target="_blank">Buy Now</a>
+  <a href="http://ebooksdownload.space/?book=0937539589" target="_blank">Download PDF</a>
+</div>
+</div>
+            <img src="assets/Images/art.jpg" align="middle" id="i1" height="250px" width="150x" alt="Art Of Living People" onclick="openNav()">
+          </td>
+          <td>
+            <div id="myNav1" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+<div class="overlay-content">
+  <a href="https://www.amazon.in/Believe-Yourself-Dr-Joseph-Murphy/dp/8183225098" target="_blank">Buy Now</a>
+  <a href="https://pingpdf.com/queue/pdf-free-pdf-believe-in-yourself-by-dr-joseph-murphy-wordpresscom.html" target="_blank">Download PDF</a>
+</div>
+</div>
+            <img src="assets/Images/believe.jpg" id="i2" height="250px" width="150x" alt="Believe In Yourself" onclick="openNav1()"></td>
+          <td>
+            <div id="myNav2" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <div class="overlay-content">
+            <a href="https://www.amazon.in/Think-Grow-Rich-Napoleon-Hill/dp/8192910911" target="_blank">Buy Now</a>
+            <a href="https://theedge.solutions/wp-content/uploads/2018/09/Think-and-Grow-Rich-by-Napoleon-Hill.pdf" target="_blank">Download PDF</a>
+            </div>
+            </div>
+            <img src="assets/Images/think.jpg" id="i3" height="250px" width="150x" alt="Think And Grow Rich" onclick="openNav2()"></td>
+          </tr>
+        </table>
+    </div>
+    <div>
+      <table class="t2">
+        <tr>
+          <td>
+            <div id="myNav3" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+<div class="overlay-content">
+  <a href="https://www.amazon.in/Power-Your-Subconscious-Mind/dp/9380227582" target="_blank">Buy Now</a>
+  <a href="https://www.law-of-attraction-haven.com/support-files/power-subconscious-mind.pdf" target="_blank">Download PDF</a>
+</div>
+</div>
+            <img src="assets/Images/power.jpeg" id="i4" height="250px" width="150px" alt="Power Of Subconsious Mind" onclick="openNav3()">
+
+          </td>
+          <td>
+            <div id="myNav4" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+<div class="overlay-content">
+  <a href="https://www.amazon.in/How-Stop-Worrying-Start-Living/dp/0671733354" target="_blank">Buy Now</a>
+  <a href="http://59.177.104.123:8082/sai_elibrary/wp-content/uploads/ebooks/Self-Helf/How_to_stop_worring_and_start_living.pdf" target="_blank">Download PDF</a>
+</div>
+</div>
+            <img src="assets/Images/stop.jpg" id="i5" height="250px" width="150px" alt="How To Stop Worrying And Start Living" onclick="openNav4()"></td>
+        </tr>
+
+  </div>
+  <script>
+  function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+function openNav1() {
+document.getElementById("myNav1").style.height = "100%";
+}
+
+function closeNav1() {
+document.getElementById("myNav1").style.height = "0%";
+}
+function openNav2() {
+document.getElementById("myNav2").style.height = "100%";
+}
+
+function closeNav2() {
+document.getElementById("myNav2").style.height = "0%";
+}
+function openNav3() {
+document.getElementById("myNav3").style.height = "100%";
+}
+
+function closeNav3() {
+document.getElementById("myNav3").style.height = "0%";
+}
+function openNav4() {
+document.getElementById("myNav4").style.height = "100%";
+}
+
+function closeNav4() {
+document.getElementById("myNav4").style.height = "0%";
+}
+</script>
+</body>
+</html>
